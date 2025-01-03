@@ -41,11 +41,6 @@ if uploaded_file:
         prediction = model.predict(preprocessed_image)
         result = np.argmax(prediction, axis=1)  # Get the class label
 
-        # Example for PyTorch
-        # model.eval()
-        # input_tensor = torch.tensor(preprocessed_image, dtype=torch.float32)
-        # prediction = model(input_tensor)
-        # result = torch.argmax(prediction, dim=1).item()
        
     st.success(f"Prediction: Class {"positive" if result == 1 else "Negative"}")
 
