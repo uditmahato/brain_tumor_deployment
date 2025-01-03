@@ -1,7 +1,0 @@
----
-
-### 4. **Run Your Streamlit App**
-Run the app locally with:
-
-```bash
-streamlit run detection.py
